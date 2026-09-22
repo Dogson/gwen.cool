@@ -1,0 +1,198 @@
+export type SkillGroup = {
+  title: string;
+  icon: string;
+  items: string[];
+};
+
+export type Project = {
+  index: string;
+  name: string;
+  domain: string;
+  year: string;
+  tagline: string;
+  description: string;
+  stack: string[];
+  url: string;
+  accent: string;
+};
+
+export const profile = {
+  name: "Gwenaël Girod",
+  firstName: "Gwenaël",
+  lastName: "Girod",
+  role: "Ingénieur fullstack",
+  subtitle: "Conception d'applications",
+  location: "Isère, France",
+  age: 33,
+  experience: "8 ans d'expérience",
+  email: "gwenael@girod.email",
+  github: "https://github.com/ggirod",
+  linkedin: "https://www.linkedin.com/in/ggirod/",
+  malt: "https://www.malt.fr/profile/gwenaelgirod",
+};
+
+export type SocialId = "linkedin" | "github" | "malt";
+
+export type Social = {
+  id: SocialId;
+  label: string;
+  href: string;
+  brand: string;
+};
+
+export const socials: Social[] = [
+  {
+    id: "linkedin",
+    label: "LinkedIn",
+    href: profile.linkedin,
+    brand: "#0A66C2",
+  },
+  { id: "github", label: "GitHub", href: profile.github, brand: "#181717" },
+  { id: "malt", label: "Malt", href: profile.malt, brand: "#FC5757" },
+];
+
+export const intro =
+  "Je conçois et développe des applications web métier à forte valeur d'usage, de la modélisation des données jusqu'aux interfaces, au déploiement et à l'industrialisation.";
+
+export const profileParagraphs = [
+  "Ingénieur fullstack, 8 ans d'expérience sur des applications web métier à forte valeur d'usage : santé, énergie, formation et IA. Je conçois et développe de bout en bout, de la modélisation des données et la conception des APIs jusqu'aux interfaces front, au déploiement et à l'industrialisation. J'ai travaillé aussi bien sur des plateformes SaaS que sur des outils de diagnostic médical ou de visualisation de données techniques.",
+  "J'interviens aussi bien sur du code existant à reprendre que sur des projets à concevoir intégralement, avec le souci de la maintenabilité : bibliothèques partagées, design systems, tests automatisés et documentation technique.",
+];
+
+export const pullQuote =
+  "Concevoir et développer de bout en bout, avec le souci de la maintenabilité.";
+
+export const skillGroups: SkillGroup[] = [
+  {
+    title: "Front-end",
+    icon: "◨",
+    items: [
+      "React",
+      "TypeScript",
+      "Astro",
+      "Storybook",
+      "Design system",
+      "Architecture atomique",
+      "Accessibilité",
+      "Responsive",
+    ],
+  },
+  {
+    title: "Back-end",
+    icon: "◧",
+    items: [
+      "Conception d'API",
+      "API REST",
+      "GraphQL",
+      "WebSockets",
+      "NestJS",
+      "NodeJS",
+      "Symfony",
+      "Java Spring",
+    ],
+  },
+  {
+    title: "Données",
+    icon: "◆",
+    items: ["Modélisation de données", "MySQL", "PostgreSQL", "MongoDB"],
+  },
+  {
+    title: "IA applicative",
+    icon: "✦",
+    items: [
+      "RAG",
+      "Embeddings & vectorisation",
+      "IA on-premise",
+      "Whisper",
+      "Ollama",
+      "NeMo",
+      "Exposition de modèles",
+    ],
+  },
+  {
+    title: "Tests & qualité",
+    icon: "◉",
+    items: [
+      "TDD",
+      "Tests unitaires & d'intégration",
+      "Tests end-to-end",
+      "Jest",
+      "Vitest",
+      "Cypress",
+      "Couverture & qualité de code",
+    ],
+  },
+  {
+    title: "Architecture & industrialisation",
+    icon: "▦",
+    items: ["ADR", "CI/CD", "Monorepo", "GitHub Actions", "Docker"],
+  },
+  {
+    title: "Développement assisté par IA",
+    icon: "❖",
+    items: [
+      "Génération & refactoring",
+      "Skills & agents",
+      "OpenCode",
+      "Claude Code",
+      "GitHub Copilot",
+    ],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    index: "01",
+    name: "miam",
+    domain: "miam.gwen.cool",
+    year: "2025",
+    tagline: "Carnet de recettes",
+    description:
+      "Site de recettes statique en JAMStack, contenu piloté depuis un CMS et rendu au build pour rester rapide et sobre.",
+    stack: ["Astro", "React", "TypeScript", "DecapCMS"],
+    url: "https://miam.gwen.cool",
+    accent: "var(--color-miam)",
+  },
+  {
+    index: "02",
+    name: "flowstate",
+    domain: "flowstate.gwen.cool",
+    year: "2023",
+    tagline: "Playlists de jeux vidéo",
+    description:
+      "Site statique de playlists de musiques de jeux vidéo, pensé pour l'écoute et la découverte, avec une interface épurée.",
+    stack: ["React", "TypeScript"],
+    url: "https://flowstate.gwen.cool",
+    accent: "var(--color-flowstate)",
+  },
+  {
+    index: "03",
+    name: "desjeuxetdesmots",
+    domain: "desjeuxetdesmots.gwen.cool",
+    year: "2019 — aujourd'hui",
+    tagline: "Agrégateur de contenus",
+    description:
+      "Application d'agrégation et de tri de podcasts et vidéos de jeux vidéo : collecte, classement et lecture dans un même flux.",
+    stack: ["React", "NestJS"],
+    url: "https://desjeuxetdesmots.gwen.cool",
+    accent: "var(--color-desjeux)",
+  },
+  {
+    index: "04",
+    name: "blog",
+    domain: "blog.gwen.cool",
+    year: "2019",
+    tagline: "Écriture & technique",
+    description:
+      "Blog personnel en JAMStack, généré au build et alimenté par un CMS, pour écrire sans se soucier de l'infrastructure.",
+    stack: ["Gatsby", "React", "GraphQL", "Netlify-CMS"],
+    url: "https://blog.gwen.cool",
+    accent: "var(--color-blog)",
+  },
+];
+
+export const navLinks = [
+  { label: "Profil", href: "#profil" },
+  { label: "Compétences", href: "#competences" },
+  { label: "Projets persos", href: "#projets" },
+];
