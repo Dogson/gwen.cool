@@ -143,6 +143,18 @@ export const skillGroups: SkillGroup[] = [
 export const projects: Project[] = [
   {
     index: "01",
+    name: "about games",
+    domain: "aboutgames.gwen.cool",
+    year: "2026",
+    tagline: "Agrégateur d'essais vidéos sur le jeu vidéo",
+    description:
+      "Plateforme qui rassemble une sélection choisie de vidéastes francophones et anglophones et leurs essais vidéo sur le jeu vidéo, triés par jeu par une reconnaissance automatique par IA.",
+    stack: ["React", "NestJS", "IA"],
+    url: "https://aboutgames.gwen.cool/",
+    accent: "var(--color-aboutgames)",
+  },
+  {
+    index: "02",
     name: "miam",
     domain: "miam.gwen.cool",
     year: "2025",
@@ -154,7 +166,7 @@ export const projects: Project[] = [
     accent: "var(--color-miam)",
   },
   {
-    index: "02",
+    index: "03",
     name: "flowstate",
     domain: "flowstate.gwen.cool",
     year: "2023",
@@ -164,18 +176,6 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript"],
     url: "https://flowstate.gwen.cool",
     accent: "var(--color-flowstate)",
-  },
-  {
-    index: "03",
-    name: "desjeuxetdesmots",
-    domain: "desjeuxetdesmots.gwen.cool",
-    year: "2019 — aujourd'hui",
-    tagline: "Agrégateur de contenus",
-    description:
-      "Application d'agrégation et de tri de podcasts et vidéos de jeux vidéo : collecte, classement et lecture dans un même flux.",
-    stack: ["React", "NestJS"],
-    url: "https://desjeuxetdesmots.gwen.cool",
-    accent: "var(--color-desjeux)",
   },
   {
     index: "04",
