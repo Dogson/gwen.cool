@@ -17,8 +17,8 @@ const spans = [
 
 export function Skills() {
   return (
-    <section id="competences" className="relative scroll-mt-24 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative py-24 md:py-32">
+      <div id="competences" className="mx-auto max-w-6xl scroll-mt-24 px-6">
         <SectionHeading
           index="02"
           kicker="Compétences"

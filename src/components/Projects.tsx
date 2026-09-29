@@ -5,8 +5,8 @@ import { SectionHeading } from "./ui/SectionHeading";
 
 export function Projects() {
   return (
-    <section id="projets" className="relative scroll-mt-24 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="relative py-24 md:py-32">
+      <div id="projets" className="mx-auto max-w-6xl scroll-mt-24 px-6">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
             index="03"
