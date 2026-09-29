@@ -15,15 +15,30 @@ const links: {
   href: string;
   Icon: ComponentType<IconProps>;
 }[] = [
-  { label: "Email", value: profile.email, href: `mailto:${profile.email}`, Icon: MailIcon },
+  {
+    label: "Email",
+    value: profile.email,
+    href: `mailto:${profile.email}`,
+    Icon: MailIcon,
+  },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/ggirod",
     href: profile.linkedin,
     Icon: LinkedinIcon,
   },
-  { label: "GitHub", value: "github.com/ggirod", href: profile.github, Icon: GithubIcon },
-  { label: "Malt", value: "malt.fr/profile/gwenaelgirod", href: profile.malt, Icon: MaltIcon },
+  {
+    label: "GitHub",
+    value: "github.com/dogson",
+    href: profile.github,
+    Icon: GithubIcon,
+  },
+  {
+    label: "Malt",
+    value: "malt.fr/profile/gwenaelgirod",
+    href: profile.malt,
+    Icon: MaltIcon,
+  },
 ];
 
 export function Footer() {
@@ -93,9 +108,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-3 border-t border-paper/15 pt-8 text-xs text-paper/70 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {year} Gwenaël Girod · {profile.location}
-          </p>
+          <p>© {year} Gwenaël Girod</p>
           <p>Conçu avec React, Vite &amp; Tailwind</p>
         </div>
       </div>

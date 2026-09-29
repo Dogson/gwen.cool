@@ -20,13 +20,13 @@ export const profile = {
   name: "Gwenaël Girod",
   firstName: "Gwenaël",
   lastName: "Girod",
+  location: "Grenoble, France",
   role: "Ingénieur fullstack",
   subtitle: "Conception d'applications",
-  location: "Isère, France",
   age: 33,
   experience: "8 ans d'expérience",
   email: "gwenael@girod.email",
-  github: "https://github.com/ggirod",
+  github: "https://github.com/dogson",
   linkedin: "https://www.linkedin.com/in/ggirod/",
   malt: "https://www.malt.fr/profile/gwenaelgirod",
 };
@@ -55,8 +55,8 @@ export const intro =
   "Je conçois et développe des applications web métier à forte valeur d'usage, de la modélisation des données jusqu'aux interfaces, au déploiement et à l'industrialisation.";
 
 export const profileParagraphs = [
-  "Ingénieur fullstack, 8 ans d'expérience sur des applications web métier à forte valeur d'usage : santé, énergie, formation et IA. Je conçois et développe de bout en bout, de la modélisation des données et la conception des APIs jusqu'aux interfaces front, au déploiement et à l'industrialisation. J'ai travaillé aussi bien sur des plateformes SaaS que sur des outils de diagnostic médical ou de visualisation de données techniques.",
-  "J'interviens aussi bien sur du code existant à reprendre que sur des projets à concevoir intégralement, avec le souci de la maintenabilité : bibliothèques partagées, design systems, tests automatisés et documentation technique.",
+  "Ingénieur fullstack, 8 ans d'expérience sur des applications web métier à forte valeur d'usage : santé, IA, énergie... Je conçois et développe de bout en bout : modélisation des données, conception des APIs, interfaces front, déploiement et industrialisation.",
+  "Mes principes : lisibilité et propreté du code, scalabilité de l'architecture, ergonomie et accessibilité de l'UX, non-régression garantie par les tests et la CI.",
 ];
 
 export const pullQuote =

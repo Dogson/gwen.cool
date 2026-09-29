@@ -17,7 +17,10 @@ const item = {
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-16 sm:pt-40 md:pb-24">
+    <section
+      id="top"
+      className="relative overflow-hidden pt-32 pb-16 sm:pt-40 md:pb-24"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute -top-48 -left-40 h-[34rem] w-[34rem] rounded-full bg-sage/25 blur-3xl"
@@ -60,24 +63,36 @@ export function Hero() {
             {intro}
           </motion.p>
 
-          <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3">
+          <motion.div
+            variants={item}
+            className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3"
+          >
             <div>
-              <p className="text-[0.7rem] uppercase tracking-[0.24em] text-faint">Basé en</p>
+              <p className="text-[0.7rem] uppercase tracking-[0.24em] text-faint">
+                Basé à
+              </p>
               <p className="mt-1 text-sm text-ink">{profile.location}</p>
             </div>
             <span className="hidden h-8 w-px bg-line sm:block" />
             <div>
-              <p className="text-[0.7rem] uppercase tracking-[0.24em] text-faint">Expérience</p>
+              <p className="text-[0.7rem] uppercase tracking-[0.24em] text-faint">
+                Expérience
+              </p>
               <p className="mt-1 text-sm text-ink">{profile.experience}</p>
             </div>
             <span className="hidden h-8 w-px bg-line sm:block" />
             <div>
-              <p className="text-[0.7rem] uppercase tracking-[0.24em] text-faint">Statut</p>
+              <p className="text-[0.7rem] uppercase tracking-[0.24em] text-faint">
+                Statut
+              </p>
               <p className="mt-1 text-sm text-ink">Freelance</p>
             </div>
           </motion.div>
 
-          <motion.div variants={item} className="mt-11 flex flex-wrap items-center gap-4">
+          <motion.div
+            variants={item}
+            className="mt-11 flex flex-wrap items-center gap-4"
+          >
             <a
               href={`mailto:${profile.email}`}
               className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm text-paper transition-colors duration-300 hover:bg-forest"
@@ -122,7 +137,9 @@ export function Hero() {
               <p className="text-[0.65rem] uppercase tracking-[0.22em] text-faint">
                 Ingénieur fullstack
               </p>
-              <p className="font-display text-base text-ink">React · Node · IA</p>
+              <p className="font-display text-base text-ink">
+                React · Node · IA
+              </p>
             </div>
           </div>
         </motion.div>
